@@ -1,0 +1,26 @@
+h1 {
+  color: rgb(92, 255, 92);
+}
+h3{
+  color: blue;
+}
+
+.card{
+  padding-left: 78px;
+  padding-top: 45px;
+  border: 2px solid red;
+
+}
+.EmployeeList{
+  padding-top: 34;
+    padding-left: 78px;
+
+}
+.btn{
+    background-color: rgb(81, 173, 0);
+}
+
+p{
+  color: rgb(58, 226, 43);
+  background-color: rgb(36, 8, 8);
+}
