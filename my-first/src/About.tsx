@@ -3,7 +3,7 @@ function About() {
     <div className="container text-center">
       <h1>about me</h1>
       <p>
-        skills i have 
+       <strong>SKILS I HAVE</strong>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
