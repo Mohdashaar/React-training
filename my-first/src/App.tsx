@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import UserList from "./Userlist";
 import UserDetails from "./UserDeatails";
 import Card from "./Card";
+import Books2 from "./Books2";
 
 
 
@@ -29,6 +30,9 @@ function App() {
         <Link to="/profile" className="btn btn-outline-light m-1">
           View My Profile
         </Link>
+         <Link to="/Books" className="btn btn-outline-light m-1">
+          Bookses
+        </Link>
       </nav>
 
       <div className="container mt-4">
@@ -38,6 +42,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/users/:id" element={<UserDetails />} />
+            <Route path="/Books" element={<Books2 />} />
 
              <Route
             path="/profile"
