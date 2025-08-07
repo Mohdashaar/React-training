@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
 import About from "./About";
@@ -7,56 +7,43 @@ import UserList from "./Userlist";
 import UserDetails from "./UserDeatails";
 import Card from "./Card";
 import Books2 from "./Books2";
-
+import Header from "./Header";
+import Footer from "./Footer";
+import ProductList from "./product";
+import PostList2 from "./postlist2";
+import Asi10 from "./asi10";
 
 
 function App() {
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-expand bg-dark p-3">
-        <Link to="/" className="btn btn-outline-light m-1">
-          Home
-        </Link>
-        <Link to="/about" className="btn btn-outline-light m-1">
-          About
-        </Link>
-        <Link to="/contact" className="btn btn-outline-light m-1">
-          Contact
-        </Link>
-        <Link to="/users" className="btn btn-outline-light m-1">
-          Users
-        </Link>
-
-        <Link to="/profile" className="btn btn-outline-light m-1">
-          View My Profile
-        </Link>
-         <Link to="/Books" className="btn btn-outline-light m-1">
-          Bookses
-        </Link>
-      </nav>
-
-      <div className="container mt-4">
+      <Header />
+      <main className="container mt-4 minHt">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/users/:id" element={<UserDetails />} />
-            <Route path="/Books" element={<Books2 />} />
-
-             <Route
+          <Route path="/posts" element={<PostList2 />} />
+          <Route path="/books" element={<Books2 />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/recipt" element={<Asi10 />} /> 
+          <Route
             path="/profile"
             element={
               <Card
                 name="MOHAMMED ASHAAR"
                 role="FRONT-END WEB DEVELOPER"
-                skills={["HTML", "CSS" , "boostrap", "java-script", "react"]}
+                skills={["HTML", "CSS", "boostrap", "java-script", "react"]}
               />
             }
           />
         </Routes>
-      </div>
+      </main>
+      <Footer />
     </BrowserRouter>
   );
 }
+
 export default App;
