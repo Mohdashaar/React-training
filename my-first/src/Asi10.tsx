@@ -21,6 +21,7 @@ const Asi10 = () => {
         const data = await response.json();
         setRecipes(data.recipes || []);
       } catch (error) {
+        
         console.error("Failed to fetch recipes:", error);
       } finally {
         setLoading(false);

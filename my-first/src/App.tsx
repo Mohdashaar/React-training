@@ -10,8 +10,9 @@ import Books2 from "./Books2";
 import Header from "./Header";
 import Footer from "./Footer";
 import ProductList from "./product";
-import PostList2 from "./postlist2";
-import Asi10 from "./asi10";
+import PostList3 from "./postlist3";
+import Asi10 from "./Asi10";
+
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/users/:id" element={<UserDetails />} />
-          <Route path="/posts" element={<PostList2 />} />
+          <Route path="/posts" element={<PostList3 />} />
           <Route path="/books" element={<Books2 />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/recipt" element={<Asi10 />} /> 

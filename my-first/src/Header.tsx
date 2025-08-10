@@ -73,16 +73,6 @@ function Header() {
                 Profile
               </NavLink>
             </li>
-                      <li className="nav-item">
-            <NavLink
-              to="/counter"
-              className={(navData) =>
-                "nav-link" + (navData.isActive ? " active text-warning" : "")
-              }
-            >
-              Counter
-            </NavLink>
-          </li>
 
           <li className="nav-item">
               <NavLink

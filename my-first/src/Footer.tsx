@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-secondary text-white mt-5">
+    <footer className="bg-dark text-white mt-5">
       <div className="container py-3 border-top d-flex flex-wrap justify-content-between align-items-center">
         
        
