@@ -84,6 +84,16 @@ function Header() {
                 Recipes
               </NavLink>
             </li>
+          <li className="nav-item">
+              <NavLink
+                to="/Courses"
+                className={(navData) =>
+                  "nav-link" + (navData.isActive ? " active text-warning" : "")
+                }
+              >
+                Courses
+              </NavLink>
+            </li>
 
           </ul>
         </div>

@@ -10,8 +10,10 @@ import Books2 from "./Books2";
 import Header from "./Header";
 import Footer from "./Footer";
 import ProductList from "./product";
-import PostList3 from "./postlist3";
-import Asi10 from "./Asi10";
+import PostList4 from "./postlist4-5";
+import RecipeSearch from "./RecipeSearch";
+import Courselist3 from "./Courselist3";
+import CourseAdd from "./CourseAdd";
 
 
 
@@ -26,17 +28,22 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/users/:id" element={<UserDetails />} />
-          <Route path="/posts" element={<PostList3 />} />
+          <Route path="/posts" element={<PostList4 />} />
+          {/* <Route path="/posts" element={<PostList3 />} /> */}
           <Route path="/books" element={<Books2 />} />
           <Route path="/products" element={<ProductList />} />
-          <Route path="/recipt" element={<Asi10 />} /> 
+          <Route path="/recipt" element={<RecipeSearch />} /> 
+          <Route path="/courses" element={<Courselist3 />} /> 
+           <Route path="/add-course" element={<CourseAdd />} />
+         
+
           <Route
             path="/profile"
             element={
               <Card
                 name="MOHAMMED ASHAAR"
                 role="FRONT-END WEB DEVELOPER"
-                skills={["HTML", "CSS", "boostrap", "java-script", "react"]}
+                skills={["HTML", "CSS", "bootstrap", "java-script", "react"]}
               />
             }
           />
